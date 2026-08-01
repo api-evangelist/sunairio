@@ -1,7 +1,31 @@
 aid: sunairio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sunairio.png
 name: Sunairio
-description: Sunairio is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Sunairio is a grid forecasting company that provides integrated weather,
+  climate, and energy insights for power markets. Its flagship platform,
+  Sunairio ONE, generates 1,000-member ensemble forecasts across horizons from
+  hourly to decadal, capturing extreme-weather and grid-stress scenarios that
+  traditional forecasts miss. The company also publishes SHED (Sunairio
+  High-resolution Earth Data), a proprietary historical weather dataset for the
+  Continental US from 1950 to present at roughly 100x the resolution of ERA5,
+  with asset-level wind and solar variability. Customers such as energy traders,
+  grid operators, utility-scale asset developers, and demand-response
+  aggregators access forecasts and data through a web UI, an API, and (on higher
+  tiers) direct Snowflake data delivery. Founded in 2020 by Rob Cirincione, the
+  company has been recognized by the National Science Foundation, American Clean
+  Power, and EPRI.
 url: https://raw.githubusercontent.com/api-evangelist/sunairio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +35,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Energy
+- Weather
+- Climate
+- Forecasting
+- Grid
+- Data
+- Analytics
+- Power Markets
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +53,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sunairio-domain-security.yml
 - type: Website
   url: https://sunairio.com/
+- type: Portal
+  url: https://app.sunairio.com/
+- type: Login
+  url: https://app.sunairio.com/
+- type: Pricing
+  url: https://sunairio.com/solutions/plans-pricing/
+- type: Support
+  url: https://sunairio.com/contact/
+- type: Blog
+  url: https://sunairio.com/knowledge-center/
+- type: PrivacyPolicy
+  url: https://sunairio.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
